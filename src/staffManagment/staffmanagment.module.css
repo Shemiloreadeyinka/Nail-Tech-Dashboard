@@ -1,0 +1,525 @@
+.flex {
+    display: flex;
+}
+
+.jstfycen {
+    justify-content: center;
+}
+
+.spaceBet {
+    justify-content: space-between;
+}
+
+.alignCen {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+.px14 {
+    font-size: clamp(10px,0.92vw, 17px);
+}
+
+.px12 {
+    font-size: clamp(8px,0.79vw, 15px);
+}
+
+.grey {
+    color: #71717A;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.align {
+    align-items: center;
+}
+
+.w400 {
+    font-weight: 400;
+}
+
+
+.StaffManagment{
+    padding:24px 40px ;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.StaffManagment>h1{
+    font-weight: 500;
+    font-size: clamp(20px,1.58vw,27px);
+}
+
+.StaffManagmentContent,.AddStaff{
+    border: 1px solid #E9EAEB;
+width:100% ;
+height: 767px;
+border-radius: 12px;
+padding: 0px 16px;
+overflow: scroll;
+scrollbar-width: none;
+}
+
+.staffHeader{
+    display: flex;
+    width: 100%;
+    height: 75px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    width: 21.06vw;
+    height: 36px;
+    gap: 0.53vw;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 10px 14px;
+    border: 1px solid #E4E4E7;
+    display: flex;
+    align-items: center;
+}
+
+.search>input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.search>input::placeholder {
+    font-size: 16px;
+    font-family: 400;
+}
+
+.staffHeader>div:first-child {
+    display: flex;
+    /* width: 483px; */
+    justify-content: space-between;
+}
+
+
+.staffTable td:last-child>div:first-child {
+    width: 2.37vw;
+    height: 36px;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #E4E4E7;
+    display: flex;
+    justify-content: center;
+}
+
+.filter {
+    width: 6.19vw;
+    height: 36px;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #E4E4E7;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterContent_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterContent {
+    position: absolute;
+    width: 17.11vw;
+    height: auto;
+    top: 242px;
+    left: 68.5vw;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #E4E4E7;
+    font-size: 12px;
+
+}
+
+.stock, .quantity , .date,.expiry,.usage,.discount {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 8px;
+    padding: 8px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid#E4E4E7;
+    line-height: 20px;
+}
+
+.stockOptions,.quantityOptions, .dateOptions,.expiryOptions,.usageOptions,.discountUsage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 8px;
+    line-height: 18px;
+}
+
+
+.filterOption{
+    height: 80px;
+    margin-top: 16px;
+}
+.filterOption>button{
+    width: 100%;
+    height: 40px;
+    background: #FF6C78;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+}
+.filterOption>button:nth-child(2){
+    background-color: #FFFFFF;
+    color: #FF6C78;
+}
+.staffHeaderTitle {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+.staffHeaderTitle>h1{
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 20px;
+}
+.staffHeaderTitle>div {
+    width: 2.80vw;
+    height: 20px;
+    background-color: #FFF5F6;
+    color: #FF6C78;
+    font-weight: 500;
+    padding: 2px 8px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border-radius: 16px;
+}
+.staffHeader>div:nth-child(3){
+    display: flex;
+    width: 15.53vw;
+    justify-content: space-between;
+
+}
+.addStaff{
+    width: 7.77vw;
+    display: flex;
+    height: 36px;
+    background-color: #FF6C78;
+    color:#FFFFFF;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+table {
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+tbody{overflow: scroll;}
+
+.staffTable th,.staffTable td {
+    font-size: clamp(10px,0.92vw,18px);
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    height: 6.03vh;
+    padding: 12px 16px;
+    border: 1px solid #F7F7F8;
+}
+
+.staffTable th {
+    background-color: #F7F7F8;
+    color: #535862;
+    border: none;
+}
+.staffTable tr {
+    /* height: 6.03vh; */
+    font-weight: 500;
+
+    width: 100%;
+}
+
+.staffTable td>h2:first-child {
+    font-size: clamp(10px,0.92vw,18px);
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #181D27;
+}
+
+.staffTable td>h2:nth-child(2) {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #A1A1AA;
+
+}
+
+.AddStaffHeader{
+ display: flex;
+ width: 11.3vw;   
+ /* justify-content: space-between; */
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+.AddStaffHeader>a>div{
+    width: 2.63vw;
+    height: 40px;
+    background-color: #F7F7F8;
+    border-radius: 8px;
+    padding: 8px;
+}
+.AddStaffHeader h2{
+    font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+}
+.saveStaff{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width:100%;
+    gap: 16px;
+}
+.AddStaff{height: 100%;}
+.saveStaff > div,button{
+    width: 144px ;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.saveStaff > div:first-child{
+    background-color: #FFF5F6;
+    color: #FF6C78;
+}
+.saveStaff > button{
+    background-color: #FF6C78;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+
+}
+.addStaffBody{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 112px;
+    width: 55.8vw;
+    height: 500px;
+    padding:24px ;
+    gap: 24px;
+}
+.addStaffBody h1{
+    font-family: Geist;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0px;
+color: #18181B;
+
+}
+.addStaffBody h2,.basicDetailsForm>div>label{
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0px;
+
+}
+.profilePhoto{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.profilePhoto>h2{
+    color:#A1A1AA;
+}
+.basicDetailsForm{
+    display : flex;
+    flex-wrap: wrap;
+ gap: 24px;
+}
+.basicDetailsForm>div{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.basicDetailsForm>div>input{
+    width: 100%;
+height: 56px;
+gap: 8px;
+border-radius: 8px;
+padding: 18px 14px;
+border: 1px solid #E4E4E7;
+outline: none;
+}
+.basicDetailsForm>div>input::placeholder{
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0px;
+color: #A1A1AA;
+}
+.basicDetailsForm>div:nth-child(5){
+    width: 52.4vw;
+}
+.basicDetailsBody{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.basicDetails{
+    background-color: #FAFAFA;
+    padding: 24px ;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+}
+/* Custom Select Styles */
+.basicDetails select{
+    /* width: 800; */
+    height: 56px;
+    gap: 8px;
+    border-radius: 8px;
+    padding: 18px 14px;
+    border: 1px solid #E4E4E7;
+    color: black;
+    cursor: pointer;
+  }
+  .permissionLvl{
+    width: 50vw;
+  }
+  .Actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: auto;
+    width: 140px;
+    border: 1px solid #E4E4E7;
+    border-radius: 8px;
+    position: relative;
+    right: 101px;
+    top: 5px;
+    margin-bottom: -120px;
+    margin-right: -105px;
+    background-color: #FFFFFF;
+  }
+  .Actions>p{    padding: 8px 14px;
+    border-bottom: 1px solid #E4E4E7;
+    width: 100%;}
+
+    .Actions>p:hover{
+    
+            background-color: #FF6C78;
+            ;
+    
+    }
+
+    .deletepopup{
+  
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    height: auto;
+    gap: 34px;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    background-color: #FAFAFA;
+      
+  }
+  .deletepopupBody{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+  }
+  .deletepopupBody>h2{
+    margin-bottom: -15px;
+font-weight: 500;
+font-size: 20px;
+
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(9, 9, 11, 0.25);
+}
+
+.actions {
+    /* width: 304px; */
+    height: 40px;
+    top: 176px;
+    left: 1096px;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.actions>button, .actions>div {
+    width: 144px;
+    border-radius: 8px;
+    height: 40px;
+    background-color: #FF6C78;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.actions>div:first-child {
+    background-color: #FFF5F6;
+    color: #FF6C78;
+}
+.closeButton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
